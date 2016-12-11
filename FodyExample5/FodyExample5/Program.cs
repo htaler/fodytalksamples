@@ -14,7 +14,7 @@ namespace FodyExample5
             person.Items.Add("Book");
             person.Items.Add("Car");
             person.Items.Add("Phone");
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 

@@ -5,8 +5,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using FodyExample2.Annotations;
-using PropertyChanged;
 
 namespace FodyExample2
 {
@@ -19,7 +17,7 @@ namespace FodyExample2
 
             person.FirstName = "Zenon";
             person.LastName = "Nowak";
-            Console.ReadKey();
+            
         }
 
         private static void Person_PropertyChanged(object sender, PropertyChangedEventArgs e)

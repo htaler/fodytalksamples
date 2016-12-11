@@ -14,7 +14,7 @@ namespace FodyExample3
             ExampleClass exampleClass = new ExampleClass();
             exampleClass.QuicklyDoSomething();
             exampleClass.SlowlyDoSomething(5);
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 
@@ -22,15 +22,16 @@ namespace FodyExample3
     {
         public void Advise(MethodAdviceContext context)
         {
-            Console.WriteLine("Before method call " + context.TargetMethod);
+            //Console.WriteLine("Before method call " + context.TargetMethod);
             
-            if (context.Parameters.Count > 0)
-            {
-                Console.WriteLine(" parameter " + context.Parameters[0] + " will be modified");
-                context.Parameters[0] = 7;
-            }
+            //if (context.Parameters.Count > 0)
+            //{
+            //    Console.WriteLine(" parameter " + context.Parameters[0] + " will be modified");
+            //    context.Parameters[0] = 7;
+            //}
             context.Proceed();
-            Console.WriteLine("after method call " + context.TargetMethod);
+
+            //Console.WriteLine("after method call " + context.TargetMethod);
         }
     }
 

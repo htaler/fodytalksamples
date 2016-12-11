@@ -24,8 +24,7 @@ namespace FodyExample1
     //{
     //    public static void Log(MethodBase methodBase, long miliseconds)
     //    {
-    //        Console.WriteLine("Metoda " + methodBase + " wykonywala sie " + miliseconds);
-    //        Console.ReadKey();
+    //        Console.WriteLine($"Metoda {methodBase} wykonywala sie {miliseconds} ms");
     //    }
     //}
 }

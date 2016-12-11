@@ -11,8 +11,15 @@ namespace FodyExample4
         static void Main(string[] args)
         {
             ExampleClass exampleClass = new ExampleClass();
-            exampleClass.DoSomething(null);
-            exampleClass.DoSomethingElse("xxx");
+            try
+            {
+                exampleClass.DoSomething(null);
+                exampleClass.DoSomethingElse("xxx");
+            }
+            catch (ArgumentNullException)
+            {
+                Console.WriteLine("Exception was caught");
+            }
         }
     }
 

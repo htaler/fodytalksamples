@@ -22,7 +22,7 @@ namespace FodyExample6
             }
             catch (Exception e)
             {
-                Debug.WriteLine("Could not edit person: " + e);
+                Console.WriteLine("Could not modify person ");
                 
             }
             
